@@ -1,5 +1,5 @@
 /*
-   Copyright (C), 2023-2024, Sara Echeverria (titu)
+   Copyright (C), 2023-2024, Atindra Raut
    Author: Sara Echeverria
    FileName: About.jsx
    Version: I
@@ -18,56 +18,121 @@ const About = () => {
     <div id="about" className="w-full flex justify-center overflow-hidden-web">
       <div className="w-full xl:w-[70%] flex flex-col pb-16">
         <div className="w-full">
-          <SectionTitle title="ABOUT ME" subtitle="Introduction" />
+          <SectionTitle title="ABOUT ME" subtitle="Get to know me" />
         </div>
-        <div className="w-full flex flex-col-reverse sm:flex-row gap-9">
-          <div className="w-full md:w-[50%] md:h-full items-center mt-10 p-6">
-            <div className="flex sm:flex-row w-full" style={{borderBottom:"2px solid #cbbde5"}}>
-              <div className=" sm:flex text-grayscale-50 p-6 gap-6">
-                <h1 className="text-7xl	">15</h1>
-                <h6 className="text-2xl	">+</h6>
+        
+        {/* Main Content Grid */}
+        <div className="w-full grid lg:grid-cols-2 gap-12 mt-12">
+          
+          {/* Left Column - Profile & Description */}
+          <LazyMotion features={domAnimation} strict>
+            <m.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, type: "spring" }}
+              className="flex flex-col gap-8"
+            >
+              {/* Profile Card */}
+              <div className="bg-gradient-to-br from-primary-900/40 to-primary-800/40 backdrop-blur-sm border border-primary-400/30 rounded-2xl p-8">
+                <div className="flex items-center gap-6 mb-6">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-r from-primary-400 to-primary-600 flex items-center justify-center text-white text-2xl font-bold">
+                    AR
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-grayscale-50">Atindra Raut</h3>
+                    <p className="text-primary-400 text-lg">Full-Stack Developer</p>
+                  </div>
+                </div>
+                
+                <p className="text-grayscale-100 leading-relaxed text-lg">
+                  "Experienced Full-Stack Developer with 3+ years of expertise in Node.js, Express.js, 
+                  and modern JavaScript frameworks. Specialized in building scalable web applications, 
+                  RESTful APIs, and microservices architecture. Proficient in both SQL and NoSQL databases, 
+                  cloud deployment on AWS, and implementing DevOps practices for efficient development workflows."
+                </p>
               </div>
-              <div className="text-grayscale-50 p-6 flex flex-col gap-2 ">
-                <div className="text-3xl	">Project Worked</div>
-                <div>Versatile solutions to complex coding problems. </div>
+
+              {/* Experience Highlights */}
+              <div className="bg-gradient-to-br from-grayscale-900/70 to-grayscale-800/70 backdrop-blur-sm border border-grayscale-700/50 rounded-2xl p-8">
+                <h4 className="text-xl font-semibold text-grayscale-50 mb-6">Experience Highlights</h4>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-3 h-3 bg-primary-400 rounded-full"></div>
+                    <span className="text-grayscale-50">3+ years in Full-Stack Development</span>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-3 h-3 bg-primary-400 rounded-full"></div>
+                    <span className="text-grayscale-50">Node.js, Express.js & RESTful APIs</span>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-3 h-3 bg-primary-400 rounded-full"></div>
+                    <span className="text-grayscale-50">MongoDB, PostgreSQL & Database Design</span>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-3 h-3 bg-primary-400 rounded-full"></div>
+                    <span className="text-grayscale-50">AWS Cloud Services & DevOps</span>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-3 h-3 bg-primary-400 rounded-full"></div>
+                    <span className="text-grayscale-50">React.js & Modern Frontend Technologies</span>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="flex sm:flex-row w-full" style={{display:"flex",borderBottom:"2px solid #cbbde5"}}>
-              <div className=" sm:flex text-grayscale-50 p-6 gap-6 ">
-                <h1 className="text-7xl	">95</h1>
-                <h6 className="text-2xl	">%</h6>
+            </m.div>
+          </LazyMotion>
+
+          {/* Right Column - Stats & Skills */}
+          <LazyMotion features={domAnimation} strict>
+            <m.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, type: "spring", delay: 0.2 }}
+              className="flex flex-col gap-6"
+            >
+              
+              {/* Stats Grid */}
+              <div className="grid grid-cols-2 gap-6">
+                <div className="bg-gradient-to-br from-primary-600/40 to-primary-500/40 backdrop-blur-sm border border-primary-400/50 rounded-2xl p-6 text-center">
+                  <div className="text-4xl font-bold text-primary-400 mb-2">25+</div>
+                  <div className="text-sm text-grayscale-100 font-semibold">Projects Completed</div>
+                </div>
+                
+                <div className="bg-gradient-to-br from-green-600/40 to-green-500/40 backdrop-blur-sm border border-green-400/50 rounded-2xl p-6 text-center">
+                  <div className="text-4xl font-bold text-primary-400 mb-2">100%</div>
+                  <div className="text-sm text-grayscale-100 font-semibold">Client Satisfaction</div>
+                </div>
+                
+                <div className="bg-gradient-to-br from-blue-600/40 to-blue-500/40 backdrop-blur-sm border border-blue-400/50 rounded-2xl p-6 text-center">
+                  <div className="text-4xl font-bold text-primary-400 mb-2">3+</div>
+                  <div className="text-sm text-grayscale-100 font-semibold">Years Experience</div>
+                </div>
+                
+                <div className="bg-gradient-to-br from-purple-600/40 to-purple-500/40 backdrop-blur-sm border border-purple-400/50 rounded-2xl p-6 text-center">
+                  <div className="text-4xl font-bold text-primary-400 mb-2">10+</div>
+                  <div className="text-sm text-grayscale-100 font-semibold">Technologies</div>
+                </div>
               </div>
-              <div className="text-grayscale-50 p-6 flex flex-col gap-2 ">
-                <div className="text-3xl	">Client Satisfaction level</div>
-                <div>Developer with emphasis on efficient coding. </div>
+
+              {/* Education & Certifications */}
+              <div className="bg-gradient-to-br from-grayscale-900/70 to-grayscale-800/70 backdrop-blur-sm border border-grayscale-700/50 rounded-2xl p-8">
+                <h4 className="text-xl font-semibold text-grayscale-50 mb-6">Education & Certifications</h4>
+                <div className="space-y-6">
+                  <div>
+                    <h5 className="text-lg font-medium text-primary-400">Bachelor's in Computer Science</h5>
+                    <p className="text-grayscale-100 text-sm">Specialization in Software Engineering • 2020-2024</p>
+                  </div>
+                  <div>
+                    <h5 className="text-lg font-medium text-primary-400">AWS Cloud Practitioner</h5>
+                    <p className="text-grayscale-100 text-sm">Cloud Solutions & Infrastructure</p>
+                  </div>
+                  <div>
+                    <h5 className="text-lg font-medium text-primary-400">Full-Stack JavaScript Developer</h5>
+                    <p className="text-grayscale-100 text-sm">MERN Stack Specialization</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="w-full md:w-[50%] md:h-full flex items-center">
-            <LazyMotion features={domAnimation} strict>
-              <m.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                  duration: 0.5,
-                  type: "spring",
-                  stiffness: 100,
-                  damping: 20,
-                }}
-                style={{ fontFamily: "Poppins, sans-serif" }}
-                className=" p-6 flex flex-col gap-6"
-              >
-                <span className="text-primary-800 text-lg">
-                  "As a multi-faceted programmer, I am efficient in multiple
-                  coding languages. My work spans across multinational
-                  corporations, where I've made significant contributions
-                  towards software development. Bringing solution-orientated
-                  mind with me, I aim for the optimal use of resources while
-                  coding, ensuring software efficiency. "
-                </span>
-              </m.p>
-            </LazyMotion>
-          </div>
+            </m.div>
+          </LazyMotion>
         </div>
       </div>
     </div>

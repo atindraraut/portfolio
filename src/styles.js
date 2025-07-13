@@ -1,4 +1,4 @@
-/* Copyright (C), 2023-2024, Sara Echeverria (titu)
+/* Copyright (C), 2023-2024, Atindra Raut
      @author Sara Echeverria
      FileName: styles.js
      @version: I

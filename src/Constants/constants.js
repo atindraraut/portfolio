@@ -107,7 +107,7 @@ const projects = [
     description:
       "A memory game with an art theme implemented with React. Test your memory skills and enjoy beautiful artwork as you match pairs of cards in this engaging game.",
     image: memoryGame,
-    source_code_link: "https://github.com/titu/artMemoryGame",
+    source_code_link: "https://github.com/atindraraut/artMemoryGame",
     demo_link: "https://arasarmemory.netlify.app/",
   },
   {
@@ -115,7 +115,7 @@ const projects = [
     description:
       "Explore a user-friendly Figma prototype for an adoption and sterilization awareness website. Experience the sleek design and contribute to a noble cause.",
     image: pawsitivePrototype,
-    source_code_link: "https://github.com/titu/pawsitive",
+    source_code_link: "https://github.com/atindraraut/pawsitive",
     demo_link:
       "https://www.figma.com/proto/zhK8DMa7uPyQIcHxkemIcx/Pawsitive?type=design&node-id=40-2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=40%3A2",
   },
@@ -124,8 +124,8 @@ const projects = [
     description:
       "A completely functional basic calculator website created with React. It allows you to perform mathematical calculations effortlessly. With testing implemented, the results are accurate.",
     image: calculator,
-    source_code_link: "https://github.com/titu/calculator",
-    demo_link: "https://tituscalculator.netlify.app/",
+    source_code_link: "https://github.com/atindraraut/calculator",
+    demo_link: "https://atindracalculator.netlify.app/",
   },
 ];
 
@@ -153,7 +153,7 @@ const skills = [
     title: "JavaScript",
     icon: jsIcon,
     description:
-      "I have substantial experience in employing JavaScript to introduce interactivity and functionality into web pages, resulting in dynamic user interfaces.",
+      "Expert in modern JavaScript (ES6+), including async/await, promises, destructuring, and arrow functions. Experienced in both frontend and backend JavaScript development.",
   },
   {
     id: "react",
@@ -220,10 +220,31 @@ const skills = [
   },
   {
     id: "node",
-    title: "Node",
+    title: "Node.js",
     icon: nodeIcon,
     description:
-      "When it comes to building web applications, I prefer using Node as my runtime environment over Yarn. I have expertise in leveraging Node.js to develop powerful and scalable web applications.",
+      "Experienced in building scalable backend applications with Node.js, creating RESTful APIs, real-time applications, and microservices architecture with Express.js and other frameworks.",
+  },
+  {
+    id: "express",
+    title: "Express.js",
+    icon: nodeIcon,
+    description:
+      "Proficient in Express.js framework for building robust web applications and APIs, implementing middleware, routing, authentication, and database integration.",
+  },
+  {
+    id: "mongodb",
+    title: "MongoDB",
+    icon: psqlIcon,
+    description:
+      "Experienced with MongoDB for NoSQL database solutions, designing schemas, implementing aggregation pipelines, and optimizing database performance.",
+  },
+  {
+    id: "docker",
+    title: "Docker",
+    icon: awsIcon,
+    description:
+      "Skilled in containerization with Docker, creating efficient containerized applications, managing docker-compose setups, and deploying scalable solutions.",
   },
   {
     id: "neo",

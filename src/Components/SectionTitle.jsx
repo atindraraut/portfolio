@@ -1,5 +1,5 @@
 /*
-   Copyright (C), 2023-2024, Sara Echeverria (titu)
+   Copyright (C), 2023-2024, Atindra Raut
    Author: Sara Echeverria
    FileName: SectionTitle.jsx
    Version: I

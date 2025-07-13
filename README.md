@@ -1,4 +1,4 @@
-# whostitu
+# Atindra's Portfolio
 
 Welcome to my portfolio repository! This project showcases my skills using React, ESLint, Tailwind, and Vite. It includes a brief introduction about me, my projects, the technologies I've worked with, and my experience. You'll also find a contact form at the bottom and my social media links below it. Feel free to explore and connect with me!
 
@@ -14,7 +14,7 @@ Welcome to my portfolio repository! This project showcases my skills using React
   <a href="#packages">Packages</a>   
 </p>
 <p align="center" >
-<a href="https://whostitu.netlify.app/">Try it out here</a> 
+<a href="https://atindraraut.netlify.app/">Try it out here</a> 
 </p>
 
 ## Features
@@ -42,7 +42,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/titu/whostitu
+$ git clone https://github.com/atindraraut/portfolio
 
 # Install dependencies
 $ npm i

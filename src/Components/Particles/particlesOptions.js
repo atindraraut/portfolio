@@ -1,3 +1,7 @@
+import psqlIcon from "../../assets/tech/postgresql.png";
+import nodeIcon from "../../assets/tech/node.webp";
+import javaIcon from "../../assets/tech/java.png";
+
 export const heroOptions = {
   autoPlay: true,
 
@@ -153,7 +157,7 @@ export const heroOptions = {
     },
 
     shape: {
-      type: 'character',
+      type: ['character', 'image'],
       character: [
         {
           fill: true,
@@ -182,6 +186,44 @@ export const heroOptions = {
           style: '',
           value: ['\uf41b'],
           weight: '400',
+        },
+        {
+          fill: true,
+          font: 'Font Awesome 6 Brands',
+          style: '',
+          value: ['\uf448'],
+          weight: '400',
+        },
+        {
+          fill: true,
+          font: 'Font Awesome 6 Brands',
+          style: '',
+          value: ['\uf09b'],
+          weight: '400',
+        },
+        {
+          fill: true,
+          font: 'Font Awesome 6 Brands',
+          style: '',
+          value: ['\uf375'],
+          weight: '400',
+        },
+      ],
+      image: [
+        {
+          src: psqlIcon,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: nodeIcon,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: javaIcon,
+          width: 32,
+          height: 32,
         },
       ],
     },
